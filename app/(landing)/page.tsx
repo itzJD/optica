@@ -98,50 +98,30 @@ export default function LandingPage() {
                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tighter">Oftalmología <span className="text-primary">Avanzada</span></h3>
                  <p className="text-gray-400 text-base md:text-lg max-w-md font-light">Exámenes computarizados, diagnóstico de patologías y control de miopía.</p>
                </div>
-               <a 
-                 href="https://wa.me/5491122334455?text=Hola!%20Me%20gustaría%20agendar%20una%20cita%20médica." 
-                 target="_blank" 
-                 rel="noopener noreferrer"
-                 className="relative z-10 mt-6 font-bold text-primary flex items-center gap-2 group/btn hover:gap-4 transition-all uppercase text-xs tracking-widest"
-               >
+               <Link href="https://wa.me/123" className="relative z-10 mt-6 font-bold text-primary flex items-center gap-2 group/btn hover:gap-4 transition-all uppercase text-xs tracking-widest">
                   Agendar Examen Visual <span className="text-xl">→</span>
-               </a>
+               </Link>
             </div>
 
-            {/* 3. LENTES DE CONTACTO */}
+            {/* 3. LENTES DE CONTACTO - Cuadrado */}
             <div className="md:col-span-1 bg-[#0D0D0D] rounded-[3rem] p-8 border border-white/5 shadow-xl hover:border-blue-500/30 transition-all duration-500 flex flex-col justify-between group cursor-pointer relative overflow-hidden">
-               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-[40px] group-hover:bg-blue-500/20 transition-all"></div>
-               <div className="relative z-10">
-                 <div className="text-5xl mb-6 group-hover:-rotate-12 transition-transform">🔍</div>
-                 <h3 className="font-bold text-xl text-white mb-3 leading-tight uppercase tracking-tighter">Lentes de <br/>Contacto</h3>
-                 <ul className="space-y-2 mb-4">
-                   {['Multifocales', 'Hidrogel', 'Estéticos'].map(item => (
-                     <li key={item} className="text-[10px] text-gray-500 flex items-center gap-2 uppercase font-black tracking-widest">
-                       <span className="w-1 h-1 bg-blue-500 rounded-full"></span> {item}
-                     </li>
-                   ))}
-                 </ul>
+               <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+               <div className="text-4xl mb-6 group-hover:-rotate-12 transition-transform">🔍</div>
+               <div>
+                 <h3 className="font-bold text-xl text-white mb-2 leading-tight">Lentes de Contacto</h3>
+                 <p className="text-gray-500 text-xs md:text-sm leading-relaxed">Adaptación personalizada multifocal y estética.</p>
                </div>
-               <p className="text-gray-500 text-[11px] leading-tight relative z-10 font-medium">Adaptación técnica para visión perfecta y confort total.</p>
             </div>
 
-            {/* 4. PRÓTESIS OCULARES */}
+            {/* 4. PRÓTESIS OCULARES - Cuadrado Especializado */}
             <div className="md:col-span-1 bg-[#0D0D0D] rounded-[3rem] p-8 border border-white/5 shadow-xl hover:border-primary/30 transition-all duration-500 flex flex-col justify-between group cursor-pointer relative overflow-hidden">
-               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-[40px] group-hover:bg-primary/10 transition-all"></div>
-               <div className="relative z-10">
-                 <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">✨</div>
-                 <h3 className="font-bold text-xl text-white mb-3 leading-tight uppercase tracking-tighter">Prótesis <br/>Oculares</h3>
-                 <ul className="space-y-2 mb-4">
-                   {['Pintado a Mano', 'Anatómicas', 'Mantenimiento'].map(item => (
-                     <li key={item} className="text-[10px] text-gray-400 flex items-center gap-2 uppercase font-black tracking-widest">
-                       <span className="w-1 h-1 bg-primary rounded-full"></span> {item}
-                     </li>
-                   ))}
-                 </ul>
+               <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+               <div className="  text-4xl mb-6 group-hover:scale-110 transition-transform">✨</div>
+               <div>
+                 <h3 className="font-bold text-xl text-white mb-2 leading-tight">Prótesis Oculares</h3>
+                 <p className="text-gray-500 text-xs md:text-sm leading-relaxed">Artesanía médica con realismo y confort estético.</p>
                </div>
-               <p className="text-gray-500 text-[11px] leading-tight relative z-10 font-medium">Artesanía médica con realismo excepcional y estética superior.</p>
             </div>
-
 
           </div>
 
