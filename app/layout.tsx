@@ -7,7 +7,7 @@ import { CartProvider } from "./context/CartContext";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ÓpticaPro | Tu Visión en Buenas Manos",
+  title: "LeaOptica | Tu Visión en Buenas Manos",
   description: "Exámenes visuales, lentes de contacto y las mejores monturas.",
 };
 
