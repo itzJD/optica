@@ -11,7 +11,7 @@ export default function ShopPage() {
   const scrollRef1 = useRef<HTMLDivElement>(null);
   const scrollRef2 = useRef<HTMLDivElement>(null);
 
-  const scroll = (ref: React.RefObject<HTMLDivElement>, direction: "left" | "right") => {
+  const scroll = (ref: React.RefObject<HTMLDivElement | null>, direction: "left" | "right") => {
     if (ref.current) {
       const { scrollLeft, clientWidth } = ref.current;
       const scrollTo = direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth;
